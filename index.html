@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Learn About open source</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Source Learning</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- AOS (Animate On Scroll) CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #6e8efb, #4a6cf7);
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body>
-    Learn to make a pull request
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="p-6 fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold">OpenEdu</div>
+      <div class="space-x-6">
+        <a href="#" class="hover:text-gray-300">Home</a>
+        <a href="#" class="hover:text-gray-300">Courses</a>
+        <a href="#" class="hover:text-gray-300">Community</a>
+        <a href="#" class="hover:text-gray-300">Contact</a>
+      </div>
+      <a href="#" class="bg-white text-gray-900 px-6 py-2 rounded-full font-semibold hover:bg-gray-200">Join Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-bg min-h-screen flex items-center">
+    <div class="container mx-auto text-center px-4" data-aos="fade-up">
+      <h1 class="text-6xl text-9xl lg:max-w-4xl mx-auto font-bold mb-6 animate__animated animate__fadeInDown">Learn <br/> Open Source</h1>
+      <p class="text-xl mb-8 animate__animated animate__fadeInUp">Empower yourself with the world's most collaborative learning resources.</p>
+      <div class="space-x-4">
+        <a href="#" class="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover-scale">Start Learning</a>
+        <a href="#" class="border border-white text-white px-8 py-3 rounded-full font-semibold hover-scale">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 min-h-screen flex items-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl text-6xl font-bold text-center mb-12 " data-aos="fade-up">Our Learning Paths</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-8 rounded-lg hover-scale" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-4xl mb-4">📚</div>
+          <h3 class="text-2xl font-bold mb-4">Comprehensive Curriculum</h3>
+          <p class="text-gray-400">Dive into a structured learning journey designed for open source enthusiasts.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg hover-scale" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-4xl mb-4">🌐</div>
+          <h3 class="text-2xl font-bold mb-4">Global Community</h3>
+          <p class="text-gray-400">Connect with learners and contributors from around the world.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-lg hover-scale" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl mb-4">💻</div>
+          <h3 class="text-2xl font-bold mb-4">Hands-On Projects</h3>
+          <p class="text-gray-400">Apply your knowledge with real-world open source projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="gradient-bg py-20 rounded-3xl mx-20 ">
+    <div class="container mx-auto text-center px-4" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-6">Ready to Join the Open Source Revolution?</h2>
+      <p class="text-xl mb-8">Become part of the thriving open source community today.</p>
+      <a href="#" class="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover-scale">Join Us Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-10">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-400">© 2023 OpenEdu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Initialization -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
